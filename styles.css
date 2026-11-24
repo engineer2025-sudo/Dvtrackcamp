@@ -99,3 +99,18 @@
 .poster-actions{display:flex;align-items:center;gap:22px;flex-wrap:wrap;margin-top:25px}
 @media(max-width:650px){.poster-share{grid-template-columns:1fr;gap:32px}.poster-preview{width:min(78%,290px)}.poster-copy h2{font-size:46px}.poster-copy>p:not(.eyebrow){font-size:12px}.poster-actions{gap:16px}}
 @media(prefers-reduced-motion:reduce){.poster-preview{transition:none}}
+.training-summary{display:block;list-style:none;cursor:pointer}
+.training-summary::-webkit-details-marker{display:none}
+.training-summary:focus-visible{outline:2px solid #8bc5ff;outline-offset:4px;border-radius:6px}
+.workout-hint{display:flex;align-items:center;justify-content:space-between;margin:17px 3px 0;padding-top:12px;border-top:1px solid #ffffff20;color:#b5cce7;font-size:10px;font-weight:700;letter-spacing:.02em}
+.workout-hint b{display:grid;place-items:center;width:22px;height:22px;border:1px solid #ffffff40;border-radius:50%;font-size:15px;line-height:1;transition:transform .22s,background .22s}
+.training-card[open] .workout-hint b{transform:rotate(45deg);background:#ffffff14}
+.workout-panel{margin:17px 2px 0;padding:16px 15px 3px;border-top:1px solid #ffffff20;animation:workoutOpen .28s ease both}
+.workout-panel h4{margin:0 0 9px;color:#e1efff;font:600 18px/1.1 var(--display);letter-spacing:.01em}
+.workout-panel ul{margin:0;padding-left:17px;color:#b2c2d6;font-size:11px;line-height:1.7}
+.workout-panel li+li{margin-top:7px}
+.workout-panel strong{color:#fff}
+.workout-disclaimer{margin:18px 2px 0;color:#95aac2;font-size:10px;line-height:1.65;max-width:780px}
+@keyframes workoutOpen{from{opacity:0;transform:translateY(-5px)}to{opacity:1;transform:translateY(0)}}
+@media(max-width:650px){.workout-panel{padding-inline:11px}.workout-panel ul{font-size:10px}.workout-disclaimer{font-size:9px;margin-top:15px}}
+@media(prefers-reduced-motion:reduce){.workout-panel{animation:none}.workout-hint b{transition:none}}

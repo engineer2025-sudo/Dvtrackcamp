@@ -18,7 +18,7 @@ Edit the content in `index.html` to update the interest form, contact informatio
 
 The running photos in `assets/` are supporting editorial imagery, not photographs of the camp or its athletes. The camp poster PDF and its web preview are organizer-provided. Replace generic running photos with approved camp imagery if the organizers provide it. Article content is general information; check linked official sources for current health, eligibility, and financial-aid guidance.
 
-`styles.css` holds the site-wide layout and responsive styles; `script.js` handles the accessible navigation, scroll reveals, article reading progress, and optional Web Audio UI ticks. Sound is off by default and only plays after a visitor enables it. The header/footer branding is text-only. The Team page has replaceable portrait slots; names and titles are limited to the details provided by the organizer.
+`styles.css` holds the site-wide layout and responsive styles; `script.js` handles the accessible navigation, scroll reveals, article reading progress, and optional Web Audio UI ticks. The three training pillars are keyboard-accessible expandable cards with general workout examples and a youth-safety disclaimer. Sound is off by default and only plays after a visitor enables it. The header/footer branding is text-only. The Team page has replaceable portrait slots; names and titles are limited to the details provided by the organizer.
 
 ## Run it on your laptop
 
